@@ -5,9 +5,17 @@ const rowdy = require('rowdy-logger')  //so we don't have to restart our server 
 const routesReport = rowdy.begin(app)
 
 app.use(express.json())   //prepares our api to receive json data from the body of all incoming requests.
+app.use(require('cors')())
 
-app.get('/puppies', (req, res) => {
-  res.send('You have reached the GET /puppies route!')
+const models = require('./models')
+
+app.get('/catalog', async (req, res) => {
+  try {
+    const books = await models.bookSet.findAll()
+    res.json({ books })
+  } catch (error) {
+    res.status(400).json({ error: error.message })
+  }
 })
 
 app.listen(3000, () => {
