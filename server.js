@@ -1,24 +1,23 @@
-const express = require('express')
-const app = express()
-// const PORT = process.env.PORT || 3000;
-const rowdy = require('rowdy-logger')  //so we don't have to restart our server with every change we make to our code or package.json
-const routesReport = rowdy.begin(app)
+const express = require('express');
+const cors = require('cors');
+const models = require('./models');
+const booksController = require('./controllers/booksController.js');
+const PORT = process.env.PORT || 8000;
+const rowdy = require('rowdy-logger');
+const app = express();
+const rowdyResults = rowdy.begin(app);
 
-app.use(express.json())   //prepares our api to receive json data from the body of all incoming requests.
-app.use(require('cors')())
+app.use(express.json())
+app.use(cors())
 
-const models = require('./models')
+app.use('/books', booksController);
 
-app.get('/catalog', async (req, res) => {
-  try {
-    const books = await models.bookSet.findAll()
-    res.json({ books })
-  } catch (error) {
-    res.status(400).json({ error: error.message })
-  }
+app.get('/', (req, res) => {
+  res.send('you hit the home route!')
 })
 
-app.listen(3000, () => {
+
+app.listen(PORT, () => {
   console.log('the server is listening!')
-  routesReport.print()
+  rowdyResults.print()
 })

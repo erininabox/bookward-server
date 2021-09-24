@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/erininabox/bookward-server#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "pg": "^8.7.1",
     "rowdy-logger": "^1.0.2",
