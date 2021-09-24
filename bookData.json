@@ -1,0 +1,60 @@
+{
+    "books": [
+        {
+            "bookID": 1,
+            "title": "Anne of Green Gables",
+            "author": "L.M. Montgomery",
+            "yearPub": "1908",
+            "description": "This heartwarming story has beckoned generations of readers into the special world of Green Gables, an old-fashioned farm outside a town called Avonlea. Anne Shirley, an eleven-year-old orphan, has arrived in this verdant corner of Prince Edward Island only to discover that the Cuthberts—elderly Matthew and his stern sister, Marilla—want to adopt a boy, not a feisty redheaded girl. But before they can send her back, Anne—who simply must have more scope for her imagination and a real home—wins them over completely. A much-loved classic that explores all the vulnerability, expectations, and dreams of a child growing up, Anne of Green Gables is also a wonderful portrait of a time, a place, a family… and, most of all, love."
+        },
+        {
+            "bookID": 2,
+            "title": "Anne of Avonlea",
+            "author": "L.M. Montgomery",
+            "yearPub": "1909",
+            "description": "At sixteen, Anne is grown up...almost. Her gray eyes shine like evening stars, but her red hair is still as peppery as her temper. In the years since she arrived at Green Gables as a freckle-faced orphan, she has earned the love of the people of Avonlea and a reputation for getting into scrapes. But when Anne begins her job as the new schoolteacher, the real test of her character begins. Along with teaching the three Rs, she is learning how complicated life can be when she meddles in someone else's romance, finds two new orphans at Green Gables, and wonders about the strange behaviour of the very handsome Gilbert Blythe. As Anne enters womanhood, her adventures touch the heart and the funny bone."
+        },        
+        {
+            "bookID": 3,
+            "title": "Anne of the Island",
+            "author": "L.M. Montgomery",
+            "yearPub": "1915",
+            "description": "New adventures lie ahead as Anne Shirley packs her bags, waves good-bye to childhood, and heads for Redmond College. With her old friend Prissy Grant waiting in the bustling city of Kingsport and her frivolous new friend Philippa Gordon at her side, Anne tucks her memories of rural Avonlea away and discovers life on her own terms, filled with surprises . . . including a marriage proposal from the worst fellow imaginable, the sale of her very first story, and a tragedy that teaches her a painful lesson. But tears turn to laughter when Anne and her friends move into an old cottage and an ornery black cat steals her heart. Little does Anne know that handsome Gilbert Blythe wants to win her heart, too. Suddenly Anne must decide whether she's ready for love."
+        },        
+        {
+            "bookID": 4,
+            "title": "Anne of Windy Poplars",
+            "author": "L.M. Montgomery",
+            "yearPub": "1936",
+            "description": "Anne Shirley has left Redmond College behind to begin a new job and a new chapter of her life away from Green Gables. Now she faces a new challenge: the Pringles. They're known as the royal family of Summerside--and they quickly let Anne know she is not the person they had wanted as principal of Summerside High School. But as she settles into the cozy tower room at Windy Poplars, Anne finds she has great allies in the widows Aunt Kate and Aunt Chatty--and in their irrepressible housekeeper, Rebecca Dew. As Anne learns Summerside's strangest secrets, winning the support of the prickly Pringles becomes only the first of her delicious triumphs."
+        },        
+        {
+            "bookID": 5,
+            "title": "Anne's House of Dreams",
+            "author": "L.M. Montgomery",
+            "yearPub": "1917",
+            "description": "Anne's own true love, Gilbert Blythe, is finally a doctor, and in the sunshine of the old orchard, among their dearest friends, they are about to speak their vows. Soon the happy couple will be bound for a new life together and their own dream house, on the misty purple shores of Four Winds Harbor. A new life means fresh problems to solve, fresh surprises. Anne and Gilbert will make new friends and meet their neighbors: Captain Jim, the lighthouse attendant, with his sad stories of the sea; Miss Cornelia Bryant, the lady who speaks from the heart—and speaks her mind; and the tragically beautiful Leslie Moore, into whose dark life Anne shines a brilliant light."
+        },        
+        {
+            "bookID": 6,
+            "title": "Anne of Ingleside",
+            "author": "L.M. Montgomery",
+            "yearPub": "1939",
+            "description": "Anne is the mother of five, with never a dull moment in her lively home. And now, with a new baby on the way and insufferable Aunt Mary Maria visiting—and wearing out her welcome—Anne's life is full to bursting. Still, Mrs. Doctor can't think of any place she'd rather be than her own beloved Ingleside. Until the day she begins to worry that her adored Gilbert doesn't love her anymore. How could that be? She may be a little older, but she's still the same irrepressible, irreplaceable redhead—the wonderful Anne of Green Gables, all grown up. She's ready to make her cherished husband fall in love with her all over again!"
+        },        
+        {
+            "bookID": 7,
+            "title": "Rainbow Valley",
+            "author": "L.M. Montgomery",
+            "yearPub": "1919",
+            "description": "Anne Shirley is grown up, has married her beloved Gilbert, and is the mother of six mischievous children. These boys and girls discover a special place all their own, but they never dream of what will happen when a strange family moves into an old mansion nearby. The Meredith clan is two boys and two girls—and a runaway named Mary Vance. Soon the Merediths join Anne's children in their private hideout, intent on carrying out their plans to save Mary from the orphanage, to help the lonely minister find happiness, and to keep a pet rooster from the soup pot. There's always an adventure brewing in the sun-dappled world of Rainbow Valley."
+        },        
+        {
+            "bookID": 8,
+            "title": "Rilla of Ingleside",
+            "author": "L.M. Montgomery",
+            "yearPub": "1921",
+            "description": "Anne's children are almost grown up, except for pretty, high-spirited Rilla. No one can resist her bright hazel eyes and dazzling smile. Rilla, almost fifteen, can't think any further ahead than going to her very first dance at the Four Winds lighthouse and getting her first kiss from handsome Kenneth Ford. But undreamed-of challenges await the irrepressible Rilla when the world of Ingleside is endangered by a far-off war. Her brothers go off to fight, and Rilla brings home an orphaned newborn in a soup tureen. She is swept into a drama that tests her courage and changes her forever."
+        }
+    ]
+}

@@ -1,37 +1,16 @@
-'use strict';
+const mongoose = require('mongoose');
 
-const fs = require('fs');
-const path = require('path');
-const Sequelize = require('sequelize');
-const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
-const config = require(__dirname + '/../config/config.json')[env];
-const db = {};
+const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookwarddb';
 
-let sequelize;
-if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
-} else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
+const configOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 }
 
-fs
-  .readdirSync(__dirname)
-  .filter(file => {
-    return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
-  })
-  .forEach(file => {
-    const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
-    db[model.name] = model;
-  });
+mongoose.connect(connectionString, configOptions)
+  .then(() => console.log('MongoDB successfully connected...'))
+  .catch((err) => console.log(`MongoDB connection error: ${err}`));
 
-Object.keys(db).forEach(modelName => {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
-  }
-});
-
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
-
-module.exports = db;
+module.exports = {
+  bookSet: require('./bookSet')
+}
