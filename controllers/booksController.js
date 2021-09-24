@@ -18,7 +18,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     models.bookSet.create(req.body, (err, savedBook) => {
         if (err) return console.log(err);
-        res.json(savedGame);
+        res.json(savedBook);
     })
 })
 

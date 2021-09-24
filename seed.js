@@ -8,8 +8,8 @@ models.bookSet.deleteMany({}, (err, result) => {
     }
 
     console.log(result.deletedCount,'books deleted');
-
-    models.bookSet.create(data.bookData, (err,seededBooks) => {
+    // console.log(data)
+    models.bookSet.create(data.bookSet, (err,seededBooks) => {
         if(err) {
             console.log(err);
             process.exit();
