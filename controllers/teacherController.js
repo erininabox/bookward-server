@@ -19,10 +19,11 @@ router.post('/add', (req, res) => {
     models.teacher.create(req.body, (err, savedTeacher) => {
         if (err) return console.log(err);
         res.json(savedTeacher);
+        console.log(`Saved Teacher: `, savedTeacher)
     })
 })
 
-router.put('/:id', (req, res) => {
+router.put('/:id', (req, res) => { 
     models.teacher.findByIdAndUpdate(
         req.params.id,
         req.body,
