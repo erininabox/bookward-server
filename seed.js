@@ -1,21 +1,21 @@
 const models = require('./models');
-const data = require('./bookData.json');
+const data = require('./teacherData.json');
 
-models.bookSet.deleteMany({}, (err, result) => {
+models.teacher.deleteMany({}, (err, result) => {
     if(err) {
         console.log(err);
         process.exit();
     }
 
-    console.log(result.deletedCount,'books deleted');
+    console.log(result.deletedCount,'teachers deleted');
     // console.log(data)
-    models.bookSet.create(data.bookSet, (err,seededBooks) => {
+    models.teacher.create(data.teacher, (err,seededTeachers) => {
         if(err) {
             console.log(err);
             process.exit();
         }
 
-        console.log(seededBooks.length, 'books created successfully');
+        console.log(seededTeachers.length, 'teachers created successfully');
         console.log('done!');
         process.exit();
     })

@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const booksController = require('./controllers/booksController.js');
+const teacherController = require('./controllers/teacherController')
 
 const PORT = process.env.PORT || 4000;
 const rowdy = require('rowdy-logger');
@@ -12,6 +13,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/books', booksController);
+app.use('/teachers', teacherController);
 
 app.get('/', (req, res) => {
   res.send('you hit the home route!')

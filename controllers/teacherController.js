@@ -2,42 +2,42 @@ const router = require('express').Router();
 const models = require('../models');
 
 router.get('/', (req, res) => {
-    models.bookSet.find({}, (err, foundBooks) => {
+    models.teacher.find({}, (err, foundTeachers) => {
         if(err) return console.log(err);
-        res.json(foundBooks);
+        res.json(foundTeachers);
     })
   })
 
 router.get('/:id', (req, res) => {
-    models.bookSet.findById(req.params.id, (err, foundBook) => {
+    models.teacher.findById(req.params.id, (err, foundTeacher) => {
         if(err) return console.log(err);
-        res.json(foundBook);
+        res.json(foundTeacher);
     })
 })
 
-router.post('/', (req, res) => {
-    models.bookSet.create(req.body, (err, savedBook) => {
+router.post('/add', (req, res) => {
+    models.teacher.create(req.body, (err, savedTeacher) => {
         if (err) return console.log(err);
-        res.json(savedBook);
+        res.json(savedTeacher);
     })
 })
 
 router.put('/:id', (req, res) => {
-    models.bookSet.findByIdAndUpdate(
+    models.teacher.findByIdAndUpdate(
         req.params.id,
         req.body,
         {new: true},
-        (err, updatedBook) => {
+        (err, updatedTeacher) => {
             if(err) return console.log(err);
-            res.json(updatedBook);
+            res.json(updatedTeacher);
         }
     )
 })
 
 router.delete('/:id', (req, res) => {
-    models.bookSet.findByIdAndDelete(req.params.id, (err, deletedBook) => {
+    models.teacher.findByIdAndDelete(req.params.id, (err, deletedTeacher) => {
         if(err) return console.log(err);
-        res.json({ message: 'Successfully deleted a book' });
+        res.json({ message: `Successfully deleted ${deletedTeacher}` });
     })
 })
 

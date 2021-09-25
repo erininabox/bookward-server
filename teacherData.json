@@ -1,0 +1,24 @@
+{
+    "teacher": [
+        {
+            "lastName": "Feeny",
+            "firstName": "George",
+            "department": "Humanities"
+        },
+        {
+            "lastName": "Keating",
+            "firstName": "John",
+            "department": "English"
+        },
+        {
+            "lastName": "McGonagall",
+            "firstName": "Minerva",
+            "department": "Transfiguration"
+        },
+        {
+            "lastName": "Frizzle",
+            "firstName": "Valerie Felicity",
+            "department": "Elementary Science"
+        }
+    ]
+}
