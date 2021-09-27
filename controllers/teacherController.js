@@ -19,7 +19,6 @@ router.post('/add', (req, res) => {
     models.teacher.create(req.body, (err, savedTeacher) => {
         if (err) return console.log(err);
         res.json(savedTeacher);
-        console.log(`Saved Teacher: `, savedTeacher)
     })
 })
 

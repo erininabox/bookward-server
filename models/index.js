@@ -13,5 +13,6 @@ mongoose.connect(connectionString, configOptions)
 
 module.exports = {
   bookSet: require('./bookSet'),
-  teacher: require('./teacher')
+  teacher: require('./teacher'),
+  lendingModel: require('./lendingModel')
 }

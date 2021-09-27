@@ -15,7 +15,7 @@ router.get('/:id', (req, res) => {
     })
 })
 
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
     models.bookSet.create(req.body, (err, savedBook) => {
         if (err) return console.log(err);
         res.json(savedBook);
@@ -37,7 +37,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     models.bookSet.findByIdAndDelete(req.params.id, (err, deletedBook) => {
         if(err) return console.log(err);
-        res.json({ message: 'Successfully deleted a book' });
+        res.json({ message: `Successfully deleted ${deletedBook}` });
     })
 })
 

@@ -6,7 +6,8 @@ const BookSchema = new Schema({
   author: String,
   yearPub: String,
   description: String,
-  quantity: Number
+  quantity: Number,
+  lendingRecord: [{ type: Schema.Types.ObjectId, ref: 'lendingModel' }]
 })
 
 const bookSet = mongoose.model('bookSet', BookSchema);
